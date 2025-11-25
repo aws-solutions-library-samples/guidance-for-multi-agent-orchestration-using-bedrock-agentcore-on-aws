@@ -1,4 +1,4 @@
-# Guidance Title (required)
+# Guidance for Multi-Agent Orchestration using Amazon Bedrock AgentCore on AWS
 
 The Guidance title should be consistent with the title established first in Alchemy.
 
