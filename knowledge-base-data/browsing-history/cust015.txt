@@ -1,0 +1,8 @@
+Customer ID: CUST015
+
+- Date: 2024-11-13, Session Start: 10:25  
+  - Product Browsed: Nova 5G Smartphone (prod005)  
+  - Category: Mobile Phones  
+  - Actions: Researched gaming performance and battery life; read about Samsung smartphone comparison  
+  - Total Clicks: 6  
+  - Likes on Product Ads: No

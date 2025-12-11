@@ -1,0 +1,65 @@
+[
+  {
+    "name": "get_top_rated_organic",
+    "description": "Get highest-rated organic products sorted by rating (highest first), then review count. Returns complete product details INCLUDING name, description, category, rating, review_count, price, units_sold, and stock_quantity. NOTE: This tool does NOT filter by price - if you need products in a specific price range, call this tool once with a higher limit and filter the results yourself based on the price field. All organic product tools access the same product catalog, just sorted differently.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Filter by category (smartphone, laptop, smartwatch, speaker, headphones). Omit for all categories."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of products to return (default 10, range 1-50). Use higher limits (20-30) when you need to filter results by price or other criteria."
+        },
+        "include_out_of_stock": {
+          "type": "boolean",
+          "description": "Include out-of-stock products in results (default false)"
+        }
+      }
+    }
+  },
+  {
+    "name": "get_best_sellers",
+    "description": "Get best-selling organic products sorted by units sold (highest first), then rating. Returns complete product details INCLUDING name, description, category, rating, review_count, price, units_sold, and stock_quantity. NOTE: This tool does NOT filter by price - if you need products in a specific price range, call this tool once with a higher limit and filter the results yourself based on the price field. All organic product tools access the same product catalog, just sorted differently.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Filter by category (smartphone, laptop, smartwatch, speaker, headphones). Omit for all categories."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of products to return (default 10, range 1-50). Use higher limits (20-30) when you need to filter results by price or other criteria."
+        },
+        "include_out_of_stock": {
+          "type": "boolean",
+          "description": "Include out-of-stock products in results (default false)"
+        }
+      }
+    }
+  },
+  {
+    "name": "get_most_popular",
+    "description": "Get most popular organic products based on a calculated popularity score combining rating, reviews, and sales. Sorted by popularity score (highest first). Returns complete product details INCLUDING name, description, category, rating, review_count, price, units_sold, and stock_quantity. NOTE: This tool does NOT filter by price - if you need products in a specific price range, call this tool once with a higher limit and filter the results yourself based on the price field. All organic product tools access the same product catalog, just sorted differently. RECOMMENDED: Use this tool for balanced recommendations when you don't have a specific sorting preference.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Filter by category (smartphone, laptop, smartwatch, speaker, headphones). Omit for all categories."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of products to return (default 10, range 1-50). Use higher limits (20-30) when you need to filter results by price or other criteria."
+        },
+        "include_out_of_stock": {
+          "type": "boolean",
+          "description": "Include out-of-stock products in results (default false)"
+        }
+      }
+    }
+  }
+]

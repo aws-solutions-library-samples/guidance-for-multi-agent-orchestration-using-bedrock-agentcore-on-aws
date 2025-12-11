@@ -1,0 +1,16 @@
+Customer ID: CUST002
+
+- Date: 2024-11-12, Session Start: 09:30  
+  - Product Browsed: VitaFit Smartwatch (prod002)  
+  - Category: Watch  
+  - Time Spent: 10 minutes  
+  - Actions: Checked fitness tracking accuracy FAQ; compared with Nova 5G Smartphone (prod005)  
+  - Total Clicks: 7  
+  - Likes on Product Ads: No  
+
+- Date: 2024-11-14, Session Start: 08:00  
+  - Product Browsed: VitaFit Smartwatch (prod002)  
+  - Category: Watch  
+  - Actions: Reviewed app compatibility with fitness tracking apps  
+  - Total Clicks: 5  
+  - Likes on Product Ads: Yes

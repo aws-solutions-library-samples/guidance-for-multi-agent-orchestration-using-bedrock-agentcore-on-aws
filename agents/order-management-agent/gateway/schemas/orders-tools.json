@@ -1,0 +1,43 @@
+[
+  {
+    "name": "get_orders",
+    "description": "Query orders with various filters including customer ID, order status, shipping status, and return status. Returns detailed order information including product names, dates, and current status.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Filter orders by customer ID (e.g., 'cust001')"
+        },
+        "order_id": {
+          "type": "string",
+          "description": "Filter by specific order ID (e.g., 'o001')"
+        },
+        "order_status": {
+          "type": "string",
+          "description": "Filter by order status (pending, processing, shipped, delivered, cancelled)"
+        },
+        "shipping_status": {
+          "type": "string",
+          "description": "Filter by shipping status (not shipped, in transit, delivered)"
+        },
+        "return_status": {
+          "type": "string",
+          "description": "Filter by return/exchange status (not returned, returned, exchanged)"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return (default 50, max 100)"
+        }
+      }
+    }
+  },
+  {
+    "name": "get_orders_summary",
+    "description": "Get a summary of all orders grouped by status. Shows total count of orders in each status (pending, processing, shipped, delivered, cancelled).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]

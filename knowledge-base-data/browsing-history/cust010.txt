@@ -1,0 +1,8 @@
+Customer ID: CUST010
+
+- Date: 2024-11-14, Session Start: 09:10  
+  - Product Browsed: Infinity Ultra 5G (prod014)  
+  - Category: Mobile Phones  
+  - Actions: Focused on battery life and screen size; liked ad for 5G capabilities  
+  - Total Clicks: 6  
+  - Likes on Product Ads: Yes

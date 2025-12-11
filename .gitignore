@@ -1,0 +1,119 @@
+# Security scanning
+.ash/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+htmlcov/
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jest and Node.js testing
+coverage/
+jest-coverage/
+*.lcov
+test-results/
+junit.xml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+
+# CDK deployment outputs
+deployment-outputs.json
+
+# Logs
+*.log
+logs/
+scripts/test_logs/
+
+# Kiro IDE
+.kiro/
+
+# CDK
+cdk.out/
+node_modules/
+*.js.map
+cdk.context.json
+
+# Compiled TypeScript (except bin/ directory)
+infrastructure/**/*.js
+infrastructure/**/*.d.ts
+!infrastructure/bin/**/*.js
+
+# AWS
+.aws-sam/
+
+# Lambda layers and temporary files
+lambda-layer/
+!pyproject.toml
+!package.json
+!requirements.txt
+
+# Test configuration files with credentials
+scripts/test_users_config*.json
+tests/integration/test_config.json
+
+# Build artifacts
+*.zip
+
+# Kiro
+
+.ash.yaml
+# Probe scanner configuration (local only)
+probe.yaml
+.gitleaks.toml
+gitleaks.toml

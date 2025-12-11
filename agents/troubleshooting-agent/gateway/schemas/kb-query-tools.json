@@ -1,0 +1,52 @@
+[
+  {
+    "name": "query_knowledge_base",
+    "description": "Query the troubleshooting knowledge base for general product information, FAQs, and troubleshooting guides. Returns relevant documentation excerpts with confidence scores. Use this for broad searches when you need comprehensive information about a product or issue.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The search query text to find relevant troubleshooting information"
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of results to return (default: 5)"
+        }
+      },
+      "required": ["query"]
+    }
+  },
+  {
+    "name": "search_troubleshooting",
+    "description": "Search for specific product troubleshooting guides based on product name and issue type. Returns formatted troubleshooting steps and solutions. Use this when you have a specific product and a specific type of issue (e.g., bluetooth connectivity, battery drain, charging problems).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_name": {
+          "type": "string",
+          "description": "Name of the product (e.g., 'headphones', 'smartwatch', 'speaker')"
+        },
+        "issue_type": {
+          "type": "string",
+          "description": "Type of issue (e.g., 'bluetooth', 'battery', 'charging', 'connection', 'screen', 'reset')"
+        }
+      },
+      "required": ["product_name", "issue_type"]
+    }
+  },
+  {
+    "name": "get_faq",
+    "description": "Retrieve frequently asked questions (FAQ) for a specific product. Returns common questions and answers about the product. Use this when customers have general questions about product features, specifications, warranty, or usage.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_name": {
+          "type": "string",
+          "description": "Name of the product to retrieve FAQs for"
+        }
+      },
+      "required": ["product_name"]
+    }
+  }
+]

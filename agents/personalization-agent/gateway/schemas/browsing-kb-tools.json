@@ -1,0 +1,20 @@
+[
+  {
+    "name": "get_browsing_behavior",
+    "description": "Retrieve this customer's browsing history from the Knowledge Base. Returns browsing sessions showing products viewed, categories browsed, actions taken (e.g., reading reviews, comparing products), click counts, and ad engagement. Use this to understand what the customer has been interested in and how they interact with products.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Customer identifier (e.g., CUST007)"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of browsing sessions to return (default: 5)"
+        }
+      },
+      "required": ["customer_id"]
+    }
+  }
+]
