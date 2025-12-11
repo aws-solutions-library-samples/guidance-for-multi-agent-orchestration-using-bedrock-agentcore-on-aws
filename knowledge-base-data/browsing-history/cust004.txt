@@ -1,0 +1,16 @@
+Customer ID: CUST004
+
+- Date: 2024-11-12, Session Start: 10:55  
+  - Product Browsed: VitaFit Smartwatch (prod002)  
+  - Category: Watch  
+  - Time Spent: 15 minutes  
+  - Actions: Focused on fitness tracking and app compatibility; added to wishlist  
+  - Total Clicks: 8  
+  - Likes on Product Ads: Yes  
+
+- Date: 2024-11-14, Session Start: 16:50  
+  - Product Browsed: ZenSound Wireless Headphones (prod001), SonicWave Bluetooth Speaker (prod004)  
+  - Category: Electronics  
+  - Actions: Accessed user manuals; read forum on connectivity issues  
+  - Total Clicks: 7  
+  - Likes on Product Ads: No

@@ -1,0 +1,11 @@
+{
+  "metadataAttributes": {
+    "customer_id": {
+      "value": {
+        "type": "STRING",
+        "stringValue": "CUST004"
+      },
+      "includeForEmbedding": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+Customer ID: CUST005
+
+- Date: 2024-11-10, Session Start: 11:20  
+  - Product Browsed: Nova 5G Smartphone (prod005)  
+  - Category: Mobile Phones  
+  - Time Spent: 18 minutes  
+  - Actions: Compared camera quality with existing device; checked battery replacement options  
+  - Total Clicks: 6  
+  - Likes on Product Ads: Yes  
+
+- Date: 2024-11-14, Session Start: 20:10  
+  - Product Browsed: Nova 5G Smartphone (prod005)  
+  - Category: Mobile Phones  
+  - Actions: Accessed FAQ on camera modes; read feedback on battery performance  
+  - Total Clicks: 5  
+  - Likes on Product Ads: Yes

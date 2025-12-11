@@ -1,0 +1,43 @@
+[
+  {
+    "name": "get_inventory",
+    "description": "Query inventory with various filters including product ID, name, category, stock status, and low stock alerts. Returns detailed product information including quantities, stock status, and reorder thresholds.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Filter by specific product ID (e.g., 'p001')"
+        },
+        "product_name": {
+          "type": "string",
+          "description": "Filter by product name (partial match supported)"
+        },
+        "category": {
+          "type": "string",
+          "description": "Filter by product category (headphones, watch, speaker, computer, phone)"
+        },
+        "in_stock": {
+          "type": "boolean",
+          "description": "Filter by stock availability (true for in stock, false for out of stock)"
+        },
+        "low_stock": {
+          "type": "boolean",
+          "description": "Show items below reorder threshold (true for low stock items)"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return (default 50, max 100)"
+        }
+      }
+    }
+  },
+  {
+    "name": "get_inventory_summary",
+    "description": "Get a summary of inventory grouped by category. Shows total items and in-stock items for each product category.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
