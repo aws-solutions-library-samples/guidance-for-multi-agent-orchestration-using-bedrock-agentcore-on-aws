@@ -13,10 +13,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-# Python lib directories (not CDK lib/)
-**/site-packages/lib/
-**/venv/lib/
-**/env/lib/
 lib64/
 parts/
 sdist/
@@ -34,7 +30,6 @@ env/
 ENV/
 env.bak/
 venv.bak/
-customer-support-venv/
 
 # IDE
 .vscode/
@@ -71,24 +66,14 @@ jest-coverage/
 test-results/
 junit.xml
 
-# CDK Testing and Scripts
-infrastructure/test/
-infrastructure/scripts/
-infrastructure/*test*.ts
-infrastructure/*test*.js
-infrastructure/run-all-tests.ts
-infrastructure/test-deployment.ts
-
 # Environment variables
 .env
 .env.local
 .env.*.local
 .env.production
-frontend/.env.production
 
 # CDK deployment outputs
 deployment-outputs.json
-infrastructure/deployment-outputs.json
 
 # Logs
 *.log
@@ -103,7 +88,6 @@ cdk.out/
 node_modules/
 *.js.map
 cdk.context.json
-infrastructure/cdk.context.json
 
 # Compiled TypeScript (except bin/ directory)
 infrastructure/**/*.js
@@ -115,34 +99,18 @@ infrastructure/**/*.d.ts
 
 # Lambda layers and temporary files
 lambda-layer/
-*.zip
 !pyproject.toml
 !package.json
 !requirements.txt
 
-# Test and temporary files
-*_test.py
-*_result.json
-*_response.json
-*_payload.json
-debug_*.json
-memory_*.json
-agent_*.json
-simple_*.json
-proper_*.json
-list_*.json
-response.json
+# Test configuration files with credentials
 scripts/test_users_config*.json
 tests/integration/test_config.json
 
 # Build artifacts
 *.zip
-bedrock-agentcore-layer.zip
-*-updated.zip
-*-arm64.zip
 
 # Kiro
-.kiro
 
 .ash.yaml
 # Probe scanner configuration (local only)
