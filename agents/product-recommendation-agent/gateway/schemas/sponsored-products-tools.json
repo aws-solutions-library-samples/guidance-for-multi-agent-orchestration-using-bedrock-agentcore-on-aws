@@ -1,0 +1,54 @@
+[
+  {
+    "name": "get_top_rated_sponsored",
+    "description": "Get highest-rated sponsored products sorted by rating (highest first), then review count. Returns complete product details INCLUDING name, description, category, rating, review_count, price, sponsor_company, priority, and sponsor_tier. NOTE: This tool does NOT filter by price - if you need products in a specific price range, call this tool once with a higher limit and filter the results yourself based on the price field. All sponsored product tools access the same product catalog, just sorted differently.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Filter by category (smartphone, laptop, smartwatch, speaker, headphones). Omit for all categories."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of products to return (default 10, range 1-50). Use higher limits (20-30) when you need to filter results by price or other criteria."
+        }
+      }
+    }
+  },
+  {
+    "name": "get_highest_priority_sponsored",
+    "description": "Get highest-priority sponsored products sorted by priority (1 is highest), then rating. Returns complete product details INCLUDING name, description, category, rating, review_count, price, sponsor_company, priority, and sponsor_tier. Use this for primary sponsored placements. NOTE: This tool does NOT filter by price - if you need products in a specific price range, call this tool once with a higher limit and filter the results yourself based on the price field. All sponsored product tools access the same product catalog, just sorted differently.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Filter by category (smartphone, laptop, smartwatch, speaker, headphones). Omit for all categories."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of products to return (default 10, range 1-50). Use higher limits (20-30) when you need to filter results by price or other criteria."
+        }
+      }
+    }
+  },
+  {
+    "name": "get_sponsored_by_tier",
+    "description": "Get sponsored products filtered by sponsor tier (platinum, gold, silver, bronze) and sorted by priority. Returns complete product details INCLUDING name, description, category, rating, review_count, price, sponsor_company, priority, and sponsor_tier. NOTE: This tool does NOT filter by price - if you need products in a specific price range, call this tool once with a higher limit and filter the results yourself based on the price field. All sponsored product tools access the same product catalog, just sorted differently.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "sponsor_tier": {
+          "type": "string",
+          "description": "Sponsor tier to filter by (platinum, gold, silver, bronze)"
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of products to return (default 10, range 1-50). Use higher limits (20-30) when you need to filter results by price or other criteria."
+        }
+      },
+      "required": ["sponsor_tier"]
+    }
+  }
+]

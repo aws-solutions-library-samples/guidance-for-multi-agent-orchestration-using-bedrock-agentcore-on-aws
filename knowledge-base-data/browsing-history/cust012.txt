@@ -1,0 +1,8 @@
+Customer ID: CUST012
+
+- Date: 2024-11-13, Session Start: 14:30  
+  - Product Browsed: VitaFit Smartwatch (prod002)  
+  - Category: Watch  
+  - Actions: Researched heart rate monitoring accuracy and app integration; liked the product ad  
+  - Total Clicks: 8  
+  - Likes on Product Ads: Yes

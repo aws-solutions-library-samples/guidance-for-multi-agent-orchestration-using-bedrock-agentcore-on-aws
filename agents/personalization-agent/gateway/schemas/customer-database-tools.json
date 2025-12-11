@@ -1,0 +1,30 @@
+[
+  {
+    "name": "get_profile",
+    "description": "Retrieve complete customer profile from database including age, gender, income, location, marital_status, preferred_category, price_range, preferred_brand, and loyalty_tier. This provides structured demographic data essential for understanding customer segments and preferences. Use this as the authoritative source for customer information.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Customer identifier"
+        }
+      },
+      "required": ["customer_id"]
+    }
+  },
+  {
+    "name": "get_similar_insights",
+    "description": "Find OTHER customers with similar demographics and preferences from the customer database. Returns profile data (preferred category, price range, preferred brand, loyalty tier) for customers who match on category preferences, price range, or loyalty tier. Use this to identify cross-selling opportunities or understand how similar customers behave. Note: This returns data from other customers, not the specified customer.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer_id": {
+          "type": "string",
+          "description": "Customer identifier to find similar customers for (e.g., CUST007)"
+        }
+      },
+      "required": ["customer_id"]
+    }
+  }
+]
