@@ -89,10 +89,9 @@ node_modules/
 *.js.map
 cdk.context.json
 
-# Compiled TypeScript (except bin/ directory)
+# Compiled TypeScript
 infrastructure/**/*.js
 infrastructure/**/*.d.ts
-!infrastructure/bin/**/*.js
 
 # AWS
 .aws-sam/
