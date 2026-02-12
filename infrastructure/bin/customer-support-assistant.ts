@@ -26,7 +26,7 @@ const knowledgeBaseStack = new KnowledgeBaseStack(app, 'KnowledgeBaseStack', {
 
 // Main AgentCore stack
 const mainStack = new CustomerSupportAssistantStack(app, 'CustomerSupportAssistantStack', {
-  description: 'Guidance for Multi-Agent Orchestration using Amazon Bedrock AgentCore on AWS (SO9035)',
+  description: "Guidance for Multi-Agent Orchestration using Amazon Bedrock AgentCore on AWS (SO9035)",
 });
 
 
