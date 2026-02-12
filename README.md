@@ -76,7 +76,7 @@ A customer support scenario demonstrates these AgentCore services and Strands pa
 
 ### Cost
 
-_You are responsible for the cost of the AWS services used while running this Guidance. As of [MONTH] [YEAR], the cost for running this Guidance with the default settings in the US East (N. Virginia) Region is approximately $[X.XX] per month._
+You are responsible for the cost of the AWS services used while running this Guidance. As of February 2026, the cost for running this Guidance with the default settings in the US East (N. Virginia) AWS Region is approximately $1,456.35 per month for processing 100,000 customer support conversations with an average of 1,000 input tokens and 500 output tokens per agent invocation, assuming 5 hours of active agent runtime per day.
 
 _We recommend creating a [Budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) through [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help manage costs. Prices are subject to change. For full details, refer to the pricing webpage for each AWS service used in this Guidance._
 
