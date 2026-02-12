@@ -44,7 +44,7 @@ A customer support scenario demonstrates these AgentCore services and Strands pa
 
 ### Architecture Diagram
 
-![Architecture Diagram](assets/images/architecture-diagram.png)
+![Architecture Diagram](frontend/Architecture.png)
 
 **Architecture Flow:**
 
