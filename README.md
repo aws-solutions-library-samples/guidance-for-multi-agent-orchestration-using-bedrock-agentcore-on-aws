@@ -88,13 +88,24 @@ The following table provides a sample cost breakdown for deploying this Guidance
 
 | AWS service  | Dimensions | Cost [USD] |
 | ----------- | ------------ | ------------ |
-| Amazon Bedrock AgentCore | TBD | $ TBD |
-| Amazon Bedrock Knowledge Bases | TBD | $ TBD |
-| Amazon OpenSearch Serverless | TBD | $ TBD |
-| Amazon Cognito | TBD | $ TBD |
-| Amazon CloudFront | TBD | $ TBD |
-| Amazon S3 | TBD | $ TBD |
-| AWS Lambda | TBD | $ TBD |
+| Amazon Bedrock AgentCore Runtime | 5 agent runtimes (Supervisor, Order Management, Product Recommendation, Personalization, Troubleshooting), ~150 runtime hours per month (5 hours/day × 30 days), ARM64 compute | $ 400.00 |
+| Amazon Bedrock Model Invocations - Supervisor | Claude Sonnet 4.5 (us.anthropic.claude-sonnet-4-5), $3/1M input tokens, $15/1M output tokens, 40,000 invocations/month, 1,000 input + 500 output tokens per invocation | $ 195.00 |
+| Amazon Bedrock Model Invocations - Sub-Agents | Claude Haiku 4.5 (global.anthropic.claude-haiku-4-5), $0.80/1M input tokens, $4/1M output tokens, 60,000 total invocations/month across 4 agents, 1,000 input + 500 output tokens per invocation | $ 168.00 |
+| Amazon Bedrock Knowledge Bases | 2 knowledge bases (Personalization, Troubleshooting), 3 GB data each, 10,000 queries per month, Titan Embeddings v2 ($0.10/1M tokens) | $ 85.00 |
+| Amazon Bedrock AgentCore Memory | 1 shared memory resource, 100,000 conversation events per month, semantic + summary + user preference strategies, 60-day retention | $ 50.00 |
+| Amazon Bedrock AgentCore Gateway | 8 MCP endpoints (inventory, orders, customer-database, browsing-kb, organic-products, sponsored-products, kb-query, coordination), 50,000 invocations per month | $ 25.00 |
+| Amazon OpenSearch Serverless | 2 collections (personalization-index, troubleshooting-index), 4 OCUs minimum per collection, vector search enabled | $ 438.00 |
+| Amazon Cognito | 1 User Pool, 500 monthly active users (MAU), Advanced security features enabled, JWT token issuance | $ 25.00 |
+| AWS Lambda | 9 functions (1 memory manager + 8 Gateway functions), x86 architecture, 512 MB memory, 100,000 invocations per month, 500ms average duration | $ 8.50 |
+| Amazon ECR | 5 repositories (supervisor, order-management, product-recommendation, personalization, troubleshooting), 2 GB storage per repository (ARM64 images) | $ 5.00 |
+| Amazon S3 | 3 buckets (frontend, personalization data, troubleshooting data), 15 GB storage, 10,000 PUT requests, 100,000 GET requests per month | $ 2.50 |
+| Amazon CloudFront | 1 distribution for frontend, 10 GB data transfer out to internet, 100,000 HTTPS requests per month, 5 GB data transfer to origin | $ 1.85 |
+| AWS WAF | 1 Web ACL for CloudFront, 2 AWS Managed Rule Groups (CommonRuleSet), 100,000 requests per month | $ 7.00 |
+| Amazon CloudWatch | Logs from 5 agent runtimes + 9 Lambda functions, 20 GB log ingestion per month, 7-day retention, custom metrics | $ 45.00 |
+| AWS Systems Manager Parameter Store | 10 standard parameters (runtime IDs, configuration), free tier | $ 0.00 |
+| AWS KMS | 1 customer managed key for S3 encryption, 10,000 API requests per month | $ 1.50 |
+| **Total** | | **$1,456.35** |
+
 
 ## Prerequisites
 
