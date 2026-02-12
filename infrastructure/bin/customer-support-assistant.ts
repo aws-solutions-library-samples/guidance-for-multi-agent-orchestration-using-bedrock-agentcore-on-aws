@@ -25,7 +25,10 @@ const knowledgeBaseStack = new KnowledgeBaseStack(app, 'KnowledgeBaseStack', {
 });
 
 // Main AgentCore stack
-const mainStack = new CustomerSupportAssistantStack(app, 'CustomerSupportAssistantStack', {});
+const mainStack = new CustomerSupportAssistantStack(app, 'CustomerSupportAssistantStack', {
+  description: 'Guidance for Multi-Agent Orchestration using Amazon Bedrock AgentCore on AWS (SO9035)',
+});
+
 
 // Personalization Agent stack (uses shared resources from main stack)
 const personalizationStack = new PersonalizationAgentStack(app, 'PersonalizationAgentStack', {
