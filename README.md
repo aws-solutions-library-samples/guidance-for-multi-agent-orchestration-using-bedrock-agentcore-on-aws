@@ -84,7 +84,7 @@ _We recommend creating a [Budget](https://docs.aws.amazon.com/cost-management/la
 
 The following table provides a sample cost breakdown for deploying this Guidance with the default parameters in the US East (N. Virginia) Region for one month.
 
-<!-- TODO: Generate cost breakdown using AWS Pricing Calculator and upload PDF to BuilderSpace -->
+
 
 | AWS service  | Dimensions | Cost [USD] |
 | ----------- | ------------ | ------------ |
@@ -386,7 +386,7 @@ The logs show the complete flow: agentic reasoning, tool selection decisions, MC
 
 ```bash
 # Analyze supervisor agent (last 30 minutes)
-python3 ../scripts/analyze_agent_performance.py supervisor --profile <your-profile>
+python3 ../scripts/show_agent_logs.py supervisor --profile <your-profile>
 
 # Other agents: personalization, order-management, product-recommendation, troubleshooting
 ```
@@ -430,7 +430,7 @@ Extend this guidance for your specific requirements:
 - **Add specialized agents**: Create new agents for domain-specific tasks (billing, shipping, returns)
 - **Integrate your data**: Replace sample data with your product catalog, customer database, and knowledge base
 - **Customize agent prompts**: Modify system prompts in `agents/*/system_prompt.py` to match your brand voice
-- **Tune memory strategies**: Adjust memory extraction patterns in `infrastructure/lambda/memory-manager/index.py`
+- **Tune memory strategies**: Adjust memory extraction patterns in `lambda/memory-manager/index.py`
 - **Add authentication providers**: Integrate with your existing identity provider beyond Cognito
 - **Enhance the frontend**: Customize the React UI in `frontend/src/` for your branding and features
 
